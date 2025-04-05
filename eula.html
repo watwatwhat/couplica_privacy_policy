@@ -96,10 +96,6 @@
     <header>
         <h1 id="eula-title">利用規約</h1>
         <p id="eula-subtitle">Couplicaアプリの使用条件</p>
-        <div id="language-switcher">
-            <button onclick="switchLanguage('ja')">日本語</button>
-            <button onclick="switchLanguage('en')">English</button>
-        </div>
     </header>
     <main>
         <p id="eula-intro">App Storeを通じて提供されるアプリは、ユーザーに販売されるのではなくライセンス供与されます。本利用規約は、Couplicaアプリの使用条件を定めるものです。</p>
@@ -147,95 +143,4 @@
     <footer>
         &copy; 2025 Sprouxs | All Rights Reserved.
     </footer>
-    <script>
-        const translations = {
-            en: {
-                "eula-title": "End User License Agreement",
-                "eula-subtitle": "Terms of Use for Couplica App",
-                "eula-intro": "Apps made available through the App Store are licensed, not sold, to you. This End User License Agreement governs your use of the Couplica application.",
-                "license-scope-title": "1. Scope of License",
-                "license-scope-description": "Licensor grants to you a nontransferable license to use the Licensed Application on any Apple-branded products that you own or control and as permitted by the Usage Rules. This Standard EULA will govern any content, materials, or services accessible from or purchased within the Licensed Application as well as upgrades provided by Licensor (unless such upgrade is accompanied by a Custom EULA).",
-                "license-restrictions": "The following restrictions apply:",
-                "license-restrictions-list": [
-                    "Distribute or make the Licensed Application available over a network",
-                    "Transfer, redistribute or sublicense the Licensed Application",
-                    "Sell your Apple Device without removing the Licensed Application",
-                    "Copy, reverse-engineer, disassemble, attempt to derive the source code of, modify, or create derivative works of the Licensed Application"
-                ],
-                "data-consent-title": "2. Consent to Use of Data",
-                "data-consent-description": "You agree that Licensor may collect and use technical data and related information that is gathered periodically to facilitate the provision of software updates, product support, and other services to you (if any) related to the Licensed Application. Licensor may use this information, as long as it is in a form that does not personally identify you, to improve its products or to provide services or technologies to you.",
-                "termination-title": "3. Termination",
-                "termination-description": "This Standard EULA is effective until terminated by you or Licensor. Your rights under this Standard EULA will terminate automatically if you fail to comply with any of its terms.",
-                "external-services-title": "4. External Services",
-                "external-services-description": "The Licensed Application may enable access to Licensor's and/or third-party services and websites (collectively and individually, 'External Services'). You agree to use the External Services at your sole risk.",
-                "external-services-restrictions": "The following restrictions apply:",
-                "external-services-restrictions-list": [
-                    "Use External Services in any manner inconsistent with this EULA",
-                    "Use External Services to infringe intellectual property rights",
-                    "Use External Services to harass, abuse, stalk, threaten or defame any person or entity"
-                ],
-                "warranty-title": "5. No Warranty",
-                "warranty-description": "YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF THE LICENSED APPLICATION IS AT YOUR SOLE RISK. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED APPLICATION AND ANY SERVICES PERFORMED OR PROVIDED BY THE LICENSED APPLICATION ARE PROVIDED 'AS IS' AND 'AS AVAILABLE', WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND.",
-                "liability-title": "6. Limitation of Liability",
-                "liability-description": "TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY INCIDENTAL, SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER ARISING OUT OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE LICENSED APPLICATION. IN NO EVENT SHALL LICENSOR'S TOTAL LIABILITY TO YOU FOR ALL DAMAGES EXCEED THE AMOUNT OF FIFTY DOLLARS ($50.00).",
-                "export-title": "7. Export Restrictions",
-                "export-description": "You may not use or otherwise export or re-export the Licensed Application except as authorized by United States law and the laws of the jurisdiction in which the Licensed Application was obtained.",
-                "government-title": "8. Government End Users",
-                "government-description": "The Licensed Application and related documentation are 'Commercial Items', as that term is defined at 48 C.F.R. §2.101, and are being licensed to U.S. Government end users only as Commercial Items and with only those rights as are granted to all other end users.",
-                "governing-law-title": "9. Governing Law",
-                "governing-law-description": "This Agreement and the relationship between you and Apple shall be governed by the laws of the State of California, excluding its conflicts of law provisions."
-            },
-            ja: {
-                "eula-title": "利用規約",
-                "eula-subtitle": "Couplicaアプリの使用条件",
-                "eula-intro": "App Storeを通じて提供されるアプリは、ユーザーに販売されるのではなくライセンス供与されます。本利用規約は、Couplicaアプリの使用条件を定めるものです。",
-                "license-scope-title": "1. ライセンスの範囲",
-                "license-scope-description": "ライセンサーは、ユーザーに対し、本アプリを所有または管理するAppleブランド製品上で、使用規則に従って使用するための非譲渡性のライセンスを付与します。本利用規約は、本アプリからアクセス可能なコンテンツ、素材、サービス、およびライセンサーが提供するアップグレード（カスタムEULAが付随する場合を除く）にも適用されます。",
-                "license-restrictions": "以下の行為は禁止されています：",
-                "license-restrictions-list": [
-                    "ネットワーク上で本アプリを配布または利用可能にすること",
-                    "本アプリを転送、再配布、またはサブライセンスすること",
-                    "Appleデバイスを第三者に売却する前に本アプリを削除しないこと",
-                    "本ライセンスおよび使用規則で許可されている場合を除き、本アプリを複製、リバースエンジニアリング、逆アセンブル、ソースコードの導出を試みる、変更、または派生物を作成すること"
-                ],
-                "data-consent-title": "2. データ使用の同意",
-                "data-consent-description": "ユーザーは、ライセンサーが技術データおよび関連情報（デバイス、システム、アプリケーションソフトウェア、周辺機器に関する技術情報を含むがこれらに限定されない）を収集し、使用することに同意します。この情報は、ソフトウェアアップデート、製品サポート、および本アプリに関連するその他のサービス（ある場合）を提供するために定期的に収集されます。ライセンサーは、個人を特定できない形式でこの情報を使用し、製品の改善やサービスの提供に役立てることがあります。",
-                "termination-title": "3. 終了",
-                "termination-description": "本利用規約は、ユーザーまたはライセンサーによって終了されるまで有効です。ユーザーが本利用規約のいずれかの条項に違反した場合、本利用規約に基づくユーザーの権利は自動的に終了します。",
-                "external-services-title": "4. 外部サービス",
-                "external-services-description": "本アプリは、ライセンサーおよび/または第三者のサービスやウェブサイト（総称して「外部サービス」）へのアクセスを可能にする場合があります。ユーザーは、外部サービスを自己の責任で使用することに同意します。ライセンサーは、第三者の外部サービスの内容または正確性を調査または評価する責任を負わず、そのような第三者の外部サービスについて責任を負いません。",
-                "external-services-restrictions": "以下の行為は禁止されています：",
-                "external-services-restrictions-list": [
-                    "本利用規約の条件と矛盾する方法で外部サービスを使用すること",
-                    "ライセンサーまたは第三者の知的財産権を侵害する方法で外部サービスを使用すること",
-                    "外部サービスを使用して、個人または団体を嫌がらせ、虐待、ストーキング、脅迫、または中傷すること"
-                ]
-            }
-        };
-
-        let currentLang = navigator.language.startsWith('ja') ? 'ja' : 'en';
-
-        function switchLanguage(lang) {
-            console.log(`Changing to ${lang}...`);
-            try {
-                currentLang = lang;
-                document.querySelectorAll('[id]').forEach(element => {
-                    const id = element.id;
-                    if (translations[lang] && translations[lang][id]) {
-                        if (Array.isArray(translations[lang][id])) {
-                            // リスト要素を処理
-                            element.innerHTML = translations[lang][id]
-                                .map(item => `<li>${item}</li>`)
-                                .join('');
-                        } else {
-                            // 通常の要素を処理
-                            element.textContent = translations[lang][id];
-                        }
-                    }
-                });
-            }
-            catch (e) {
-                console.error(e);
-            }
-        }
-    </script>
+    
